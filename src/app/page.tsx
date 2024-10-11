@@ -44,7 +44,7 @@ export default function FuturisticPortfolio() {
       <header className="p-6 border-b border-yellow-400">
         <nav className="flex justify-between items-center max-w-6xl mx-auto">
           <motion.h1 
-            className="text-3xl font-bold"
+            className="text-xl md:text-3xl  font-bold"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -60,7 +60,7 @@ export default function FuturisticPortfolio() {
               >
                 <button 
                   onClick={() => setActiveSection(section)}
-                  className={`uppercase ${activeSection === section ? 'text-yellow-400' : 'text-gray-500'} hover:text-yellow-300 transition-colors`}
+                  className={`uppercase ${activeSection === section ? 'text-yellow-400' : 'text-gray-500'} text-xs md:text-sm hover:text-yellow-300 transition-colors`}
                 >
                   {section}
                 </button>
